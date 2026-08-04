@@ -128,10 +128,11 @@ nav {
 
 .hero-text h1 {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.1;
+    white-space: nowrap;
 }
 
 .hero-text h1 .name {
@@ -140,9 +141,10 @@ nav {
 }
 
 .hero-text .role {
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     color: var(--text-secondary);
     margin-bottom: 1.5rem;
+    white-space: nowrap;
 }
 
 .hero-text .role span { color: var(--accent-cyan); }
@@ -268,7 +270,7 @@ nav {
 .output-success { color: var(--accent-green); padding-left: 1rem; font-weight: 500; }
 
 section {
-    padding: 6rem 2rem;
+    padding: 3rem 2rem;
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -277,7 +279,7 @@ section {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .section-header h2 {
@@ -533,6 +535,10 @@ section {
     align-items: center;
     gap: 0.5rem;
 }
+
+.cert-buttons-centered { justify-content: center; }
+.cert-progress { background: var(--accent-cyan); color: var(--bg-primary); border-color: var(--accent-cyan); }
+.cert-certificate-id { color: var(--text-secondary); font-size: 0.75rem; }
 
 .cert-badge-wrap {
     display: flex;
@@ -896,11 +902,12 @@ footer a { color: var(--accent-cyan); }
 
 @media (max-width: 768px) {
     .hero-content { grid-template-columns: 1fr; text-align: center; }
-    .hero-text h1 { font-size: 2.5rem; }
+    .hero-text h1 { font-size: 2.1rem; }
+    .hero-text .role { font-size: 0.78rem; }
     .hero-buttons { justify-content: center; }
     .terminal { margin-top: 2rem; }
     .about-content, .contact-content { grid-template-columns: 1fr; }
-    section { padding: 4rem 1.5rem; }
+    section { padding: 2rem 1.5rem; }
     .writeups-grid { grid-template-columns: 1fr; }
     .links-grid { grid-template-columns: 1fr; }
 }
