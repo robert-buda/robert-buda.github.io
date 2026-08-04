@@ -172,15 +172,12 @@ async function loadProfileData() {
                         ? '<img class="issuer-logo" src="' + escapeHtml(logo.src) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
                         : '';
                     var certTitle = cert.fullName ? escapeHtml(cert.shortName) + ' - ' + escapeHtml(cert.fullName) : escapeHtml(cert.shortName);
-                    var certActions = cert.progressOnly
-                        ? '<span class="cert-btn cert-progress">In Progress</span>'
-                        : (cert.certUrl && cert.certUrl !== '#' ? '<a href="' + escapeHtml(cert.certUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-personal">My Cert</a>' : (cert.certificateId ? '<span class="cert-certificate-id">Certificate ID: ' + escapeHtml(cert.certificateId) + '</span>' : ''));
-                    if (!cert.hideExamInfo && cert.examUrl && cert.examUrl !== '#') {
-                        certActions += '<a href="' + escapeHtml(cert.examUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-official">' + (cert.trainingInfo ? 'Training Info' : 'Exam Info') + '</a>';
-                    }
                     return '<div class="cert-card">' + badgeHtml +
                         '<h4>' + certTitle + '</h4>' +
-                        '<div class="cert-buttons' + (cert.progressOnly || cert.certificateId ? ' cert-buttons-centered' : '') + '">' + certActions + '</div>' +
+                        '<div class="cert-buttons">' +
+                            (cert.certUrl && cert.certUrl !== '#' ? '<a href="' + escapeHtml(cert.certUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-personal">My Cert</a>' : '') +
+                            (cert.examUrl && cert.examUrl !== '#' ? '<a href="' + escapeHtml(cert.examUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-official">Exam Info</a>' : '') +
+                        '</div>' +
                         '<div class="issuer">' + logoHtml + escapeHtml(cert.issuerFull || '') + (cert.status ? (cert.issuerFull ? ' ' : '') + '<span class="cert-status">' + escapeHtml(cert.status) + '</span>' : '') + '</div>' +
                     '</div>';
                 }).join('');

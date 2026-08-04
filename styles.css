@@ -536,10 +536,6 @@ section {
     gap: 0.5rem;
 }
 
-.cert-buttons-centered { justify-content: center; }
-.cert-progress { background: var(--accent-cyan); color: var(--bg-primary); border-color: var(--accent-cyan); }
-.cert-certificate-id { color: var(--text-secondary); font-size: 0.75rem; }
-
 .cert-badge-wrap {
     display: flex;
     justify-content: center;
