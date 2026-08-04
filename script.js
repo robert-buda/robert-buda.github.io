@@ -171,13 +171,14 @@ async function loadProfileData() {
                     var logoHtml = logo.src
                         ? '<img class="issuer-logo" src="' + escapeHtml(logo.src) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
                         : '';
+                    var certTitle = cert.fullName ? escapeHtml(cert.shortName) + ' - ' + escapeHtml(cert.fullName) : escapeHtml(cert.shortName);
                     return '<div class="cert-card">' + badgeHtml +
-                        '<h4>' + escapeHtml(cert.shortName) + ' - ' + escapeHtml(cert.fullName) + '</h4>' +
+                        '<h4>' + certTitle + '</h4>' +
                         '<div class="cert-buttons">' +
                             (cert.certUrl && cert.certUrl !== '#' ? '<a href="' + escapeHtml(cert.certUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-personal">My Cert</a>' : '') +
                             (cert.examUrl && cert.examUrl !== '#' ? '<a href="' + escapeHtml(cert.examUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-official">Exam Info</a>' : '') +
                         '</div>' +
-                        '<div class="issuer">' + logoHtml + escapeHtml(cert.issuerFull) + (cert.status ? ' <span class="cert-status">| ' + escapeHtml(cert.status) + '</span>' : '') + '</div>' +
+                        '<div class="issuer">' + logoHtml + escapeHtml(cert.issuerFull || '') + (cert.status ? (cert.issuerFull ? ' ' : '') + '<span class="cert-status">' + escapeHtml(cert.status) + '</span>' : '') + '</div>' +
                     '</div>';
                 }).join('');
             }

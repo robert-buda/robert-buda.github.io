@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "Robert-Ioan Buda",
   "title": "NOC Engineer & Penetration Tester practitioner",
   "heroRole": "NOC Engineer & Penetration Tester practitioner",
@@ -17,11 +17,9 @@
     "I am a NOC Engineer and an eJPT-certified penetration testing practitioner, currently pursuing a double-degree Master's in Cyber Security through the EIT Digital Master School. I have hands-on experience in NOC and MSSP operations, IT/OT security monitoring, incident response, firewall administration, and endpoint security, complemented by practical offensive and defensive security skills gained through certifications, Hack The Box, TryHackMe, and personal projects."
   ],
   "links": [
-    { "title": "LinkedIn Profile", "description": "Professional networking & career", "url": "https://example.com/profile-template", "icon": "💼" },
-    { "title": "Gitbook - Cybersecurity Resources", "description": "Curated security knowledge base", "url": "https://example.com/profile-template", "icon": "📚" },
-    { "title": "GitHub Profile", "description": "Code repositories & projects", "url": "https://example.com/profile-template", "icon": "💻" },
-    { "title": "TryHackMe Profile", "description": "Cybersecurity training & labs", "url": "https://example.com/profile-template", "icon": "🎯" },
-    { "title": "AppSec Engineer Profile", "description": "Application security training", "url": "https://example.com/profile-template", "icon": "🔐" }
+    { "title": "SecureFlag Profile", "description": "OWASP secure coding platform", "url": "", "icon": "" },
+    { "title": "PentesterLab Profile", "description": "Penetration testing labs", "url": "", "icon": "" },
+    { "title": "Pwned Labs Profile", "description": "Real-world cloud security scenarios", "url": "", "icon": "" }
   ],
   "skills": [
     { "category": "Network Operations & Monitoring", "cvCategory": "NOC & Monitoring", "tags": ["Incident Response", "Alert Management", "System Health Checks", "Network Troubleshooting", "On-call Support"] },
@@ -31,20 +29,20 @@
     { "category": "ICS/OT Cybersecurity", "cvCategory": "ICS/OT Security", "tags": ["Modbus TCP", "OpenPLC", "Factory I/O", "Suricata IDS", "Conpot", "Node-RED", "Industrial Networks"] }
   ],
   "certifications": [
-    { "shortName": "eJPT", "fullName": "Junior Penetration Tester", "issuer": "INE Security", "issuerFull": "INE Security (eLearnSecurity)", "status": "June 2026", "certUrl": "https://certs.ine.com/033ad5c7-7051-4479-90b6-7b5361b398bf", "examUrl": "https://security.ine.com/certifications/ejpt-certification/" },
-    { "shortName": "CRTA", "fullName": "Certified Red Team Analyst", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/red-team-analyst-crta/", "examUrl": "https://cyberwarfare.live/product/red-team-analyst-crta/", "badgeImage": "/images/badges/crta.webp" },
-    { "shortName": "MCRTA", "fullName": "Multi-Cloud Red Team Analyst", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "examUrl": "https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "badgeImage": "/images/badges/mcrta.webp" },
-    { "shortName": "AD-RTS", "fullName": "AD Red Team Specialist", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/active-directory-red-team-specialist-ad-rts/", "examUrl": "https://cyberwarfare.live/product/active-directory-red-team-specialist-ad-rts/", "badgeImage": "/images/badges/ad-rts.webp" },
-    { "shortName": "PortSwigger Web Security Academy", "fullName": "", "issuer": "", "issuerFull": "", "status": "In Progress", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template" },
-    { "shortName": "Hack The Box Academy - Penetration Tester Path", "fullName": "", "issuer": "", "issuerFull": "", "status": "In Progress", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template" },
-    { "shortName": "Prisma Access SSE: Configuration and Deployment", "fullName": "", "issuer": "", "issuerFull": "", "status": "May 2026", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template" }
+    { "shortName": "eJPT V2", "fullName": "Junior Penetration Tester", "issuer": "INE Security", "issuerFull": "INE Security", "status": "June 2026", "certUrl": "#", "examUrl": "https://security.ine.com/certifications/ejpt-certification/" },
+    { "shortName": "CRTA", "fullName": "Certified Red Team Analyst", "issuer": "Cyber Warfare Labs", "issuerFull": "Cyber Warfare Labs", "status": "In Progress", "certUrl": "#", "examUrl": "#" },
+    { "shortName": "MCRTA", "fullName": "Multi-Cloud Red Team Analyst (AWS, Azure, and Google Cloud)", "issuer": "Cyber Warfare Labs", "issuerFull": "Cyber Warfare Labs", "status": "In Progress", "certUrl": "#", "examUrl": "#" },
+    { "shortName": "AD-RTS", "fullName": "Active Directory Red Team Specialist", "issuer": "Cyber Warfare Labs", "issuerFull": "Cyber Warfare Labs", "status": "In Progress", "certUrl": "#", "examUrl": "#" },
+    { "shortName": "Burp Suite Training", "fullName": "PortSwigger Web Security Academy", "issuer": "PortSwigger", "issuerFull": "PortSwigger", "status": "In Progress", "certUrl": "#", "examUrl": "#" },
+    { "shortName": "HTB Academy", "fullName": "Penetration Tester Path", "issuer": "Hack The Box", "issuerFull": "Hack The Box", "status": "In Progress", "certUrl": "#", "examUrl": "#" },
+    { "shortName": "Prisma Access SSE", "fullName": "Configuration and Deployment", "issuer": "Palo Alto Networks", "issuerFull": "Palo Alto Networks", "status": "May 2026", "certUrl": "#", "examUrl": "#" }
   ],
   "experience": [
-    { "title": "NOC Cyber Security Engineer", "company": "NTT DATA", "location": "Romania", "startDate": "June 2025", "endDate": "July 2027", "responsibilities": ["Monitoring: Continuously monitoring network performance to detect and respond to anomalies, outages, and inefficiencies; System Health Checks: Ensuring the health and status of servers, routers, switches, firewalls, and other critical infrastructure components; Alert Management: Analyzing and responding to alerts generated by network management systems and other monitoring tools.", "Incident Response: Identifying, diagnosing, and resolving network issues to minimize downtime; Document incidents, service requests, change approvals, and investigation results in ticketing platforms.", "Maintenance: Performing routine maintenance, updates, patches, and network security changes, including firewall modifications, VPN investigations, access validation, and post-change verification, to maintain current configurations and service stability.", "Troubleshooting infrastructure issues across Linux systems, containerized services, high-availability environments, and network components.", "Participating in on-call support, responding to urgent alerts, service outages, and high-impact incidents outside regular business hours. Handling critical incidents by coordinating escalations, communicating with stakeholders, and validating service restoration and stability."] },
+    { "title": "NOC Cyber Security Engineer", "company": "NTT DATA", "location": "Romania", "startDate": "June 2025", "endDate": "July 2027", "responsibilities": ["Monitor and support enterprise IT and OT environments for service availability, network stability, security visibility, and operational continuity.", "Analyze alerts, perform system health checks, and respond to outages, anomalies, and inefficiencies across critical infrastructure.", "Identify, diagnose, and resolve network issues while documenting incidents, service requests, change approvals, and investigations.", "Perform maintenance, patches, firewall modifications, VPN investigations, access validation, and post-change verification.", "Troubleshoot Linux systems, containerized services, high-availability environments, and network components.", "Participate in on-call support, coordinating escalations and validating restoration during critical incidents."] },
     { "title": "Network Operations Center Analyst Intern", "company": "NTT DATA", "location": "Romania", "startDate": "November 2024", "endDate": "June 2025", "responsibilities": ["Completed practical training through the Cyber TechTrek program in endpoint security, networking, cryptography, Linux, vulnerability management, email security, incident response, OSINT, EDR, threat intelligence, threat hunting, traffic analysis, and introductory forensics.", "Selected to join the NOC team and contributed to real network monitoring and analysis activities."] },
     { "title": "Software Engineer Intern", "company": "Eviden / Atos", "location": "Brasov, Romania", "startDate": "August 2024", "endDate": "November 2024", "responsibilities": ["Developed a cybersecurity news application integrating external APIs to retrieve, process, and display security-related articles.", "Built backend functionality with Spring Boot and Python scripts for cross-module interactions and workflow automation."] },
     { "title": "Embedded Software Engineer Intern", "company": "Accenture", "location": "Cluj-Napoca, Romania", "startDate": "July 2024", "endDate": "August 2024", "responsibilities": ["Developed a C++ train railway crossing simulation with synchronized train, road signal, and barrier control.", "Implemented real-time visualization with Qt and concurrent event management with QThread and QTimer."] },
-    { "title": "Full-Stack Software Developer Intern", "company": "Kronsoft Development", "location": "Brasov, Romania", "startDate": "July 2023", "endDate": "November 2023", "responsibilities": ["Developed ONG Manager, a full-stack application for NGO projects, events, volunteers, and reports.", "Built REST APIs with Java, Spring Boot, JPA, Hibernate, and PostgreSQL, documented with Swagger and validated with Postman.", "Developed responsive frontend modules using Angular, Ionic, NgRx, HTML, CSS, Bootstrap, and JavaScript."] }
+    { "title": "Full-Stack Software Developer", "company": "Kronsoft Development", "location": "Brasov, Romania", "startDate": "July 2023", "endDate": "November 2023", "responsibilities": ["Developed ONG Manager, a full-stack application for NGO projects, events, volunteers, and reports.", "Built REST APIs with Java, Spring Boot, JPA, Hibernate, and PostgreSQL, documented with Swagger and validated with Postman.", "Developed responsive frontend modules using Angular, Ionic, NgRx, HTML, CSS, Bootstrap, and JavaScript."] }
   ],
   "projects": [
     { "title": "ICS/OT Cyber Security Lab", "type": "Personal Project", "year": "2026", "responsibilities": ["Designed and implemented an isolated ICS/OT lab using Factory I/O, OpenPLC Runtime, Kali Linux, Suricata IDS, Node-RED, Conpot, and Docker.", "Simulated an industrial tank process over Modbus TCP and developed PLC logic, process variable mappings, register configurations, and a remote command register.", "Performed controlled Modbus TCP attacks with mbpoll and Metasploit, created Suricata rules for unauthorized writes, and correlated IDS alerts with cyber-physical impact.", "Deployed a Conpot honeypot and analyzed Modbus traffic with Wireshark and tcpdump."] },
@@ -54,8 +52,5 @@
     { "degree": "Master's in Cyber Security", "school": "EIT Digital Master School", "details": "Entry University: Babeș-Bolyai University, Romania | Exit University: University of Twente, the Netherlands", "startYear": "2025", "endYear": "2027" },
     { "degree": "Bachelor's in Computer Science", "school": "Babeș-Bolyai University, Cluj-Napoca, Romania", "startYear": "2022", "endYear": "2025" }
   ],
-  "issuerLogos": {
-    "INE Security": { "src": "/images/brands/ine-security.svg", "cvSrc": "/images/brands/ine-security-cv.png" },
-    "CyberWarfare Labs": { "src": "/images/brands/cyberwarfare-labs.png", "cvSrc": "/images/brands/cyberwarfare-labs-cv.png" }
-  }
+  "issuerLogos": {}
 }

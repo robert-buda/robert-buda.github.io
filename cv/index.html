@@ -724,7 +724,9 @@
                             var logoHtml = logoSrc
                                 ? '<img class="' + logoClass + '" src="' + escapeHtml(logoSrc) + '" width="12" height="12" alt="" onerror="this.style.display=\'none\'"> '
                                 : '';
-                            return '<td>' + logoHtml + '&#8226; ' + escapeHtml(cert.shortName) + ' - ' + escapeHtml(cert.fullName) + ' <span class="cv-cert-issuer">(' + escapeHtml(cert.issuer) + ')</span></td>';
+                            var certLabel = cert.fullName ? escapeHtml(cert.shortName) + ' - ' + escapeHtml(cert.fullName) : escapeHtml(cert.shortName);
+                            var issuerLabel = cert.issuer ? ' <span class="cv-cert-issuer">(' + escapeHtml(cert.issuer) + ')</span>' : '';
+                            return '<td>' + logoHtml + '&#8226; ' + certLabel + issuerLabel + '</td>';
                         };
                         for (var j = 0; j < data.certifications.length; j += 2) {
                             var certRow = document.createElement('tr');
