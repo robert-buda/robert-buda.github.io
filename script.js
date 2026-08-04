@@ -185,13 +185,19 @@ async function loadProfileData() {
         }
 
         // Projects and education sections
-        var projectsTimeline = document.getElementById('projectsTimeline');
-        if (projectsTimeline && data.projects) {
-            projectsTimeline.innerHTML = data.projects.map(function(project) {
-                return '<div class="timeline-item"><div class="timeline-date">' + escapeHtml(project.year) + '</div>' +
-                    '<div class="timeline-title">' + escapeHtml(project.title) + '</div>' +
-                    '<div class="timeline-company">' + escapeHtml(project.type) + '</div>' +
-                    '<div class="timeline-description">' + project.responsibilities.map(function(item) { return '&bull; ' + escapeHtml(item); }).join('<br>') + '</div></div>';
+        var projectsGrid = document.getElementById('projectsGrid');
+        if (projectsGrid && data.projects) {
+            projectsGrid.innerHTML = data.projects.map(function(project) {
+                var technologies = (project.technologies || []).map(function(technology) {
+                    return '<span class="project-tech">' + escapeHtml(technology) + '</span>';
+                }).join('');
+                return '<article class="project-card">' +
+                    '<span class="project-badge">' + escapeHtml(project.type) + '</span>' +
+                    '<h3 class="project-title">' + escapeHtml(project.title) + '</h3>' +
+                    '<p class="project-description">' + escapeHtml(project.description) + '</p>' +
+                    '<div class="project-technologies"><span class="project-technologies-label">Technologies</span><div class="project-tech-list">' + technologies + '</div></div>' +
+                    '<a class="project-link" href="#" aria-label="View details for ' + escapeHtml(project.title) + '">View Details <span aria-hidden="true">→</span></a>' +
+                    '</article>';
             }).join('');
         }
         var educationTimeline = document.getElementById('educationTimeline');

@@ -809,6 +809,99 @@ footer a { color: var(--accent-cyan); }
     gap: 1.5rem;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 2rem;
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: var(--accent-cyan);
+    box-shadow: var(--glow-cyan);
+    transform: translateY(-5px);
+}
+
+.project-badge {
+    align-self: flex-start;
+    padding: 0.3rem 0.7rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--accent-green-dim);
+    border-radius: 999px;
+    color: var(--accent-green);
+    font-size: 0.7rem;
+}
+
+.project-title {
+    color: var(--accent-cyan);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.project-technologies {
+    margin-top: auto;
+}
+
+.project-technologies-label {
+    display: block;
+    color: var(--text-dim);
+    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+}
+
+.project-tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.project-tech {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.project-link {
+    align-self: flex-end;
+    margin-top: 1.5rem;
+    color: var(--accent-green);
+    font-size: 0.8rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover { color: var(--accent-cyan); }
+
+@media (max-width: 1024px) {
+    .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 768px) {
+    .projects-grid { grid-template-columns: 1fr; }
+}
+
 .link-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
