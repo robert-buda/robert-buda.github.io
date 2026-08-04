@@ -175,7 +175,7 @@ async function loadProfileData() {
                     return '<div class="cert-card">' + badgeHtml +
                         '<h4>' + certTitle + '</h4>' +
                         '<div class="cert-buttons">' +
-                            (cert.certUrl && cert.certUrl !== '#' ? '<a href="' + escapeHtml(cert.certUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-personal">My Cert</a>' : '') +
+                            (cert.progressButton ? '<span class="cert-btn cert-personal">In Progress</span>' : (cert.certUrl && cert.certUrl !== '#' ? '<a href="' + escapeHtml(cert.certUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-personal">My Cert</a>' : '')) +
                             (cert.examUrl && cert.examUrl !== '#' ? '<a href="' + escapeHtml(cert.examUrl) + '" target="_blank" rel="noopener noreferrer" class="cert-btn cert-official">Exam Info</a>' : '') +
                         '</div>' +
                         '<div class="issuer">' + logoHtml + escapeHtml(cert.issuerFull || '') + (cert.status ? (cert.issuerFull ? ' ' : '') + '<span class="cert-status">' + escapeHtml(cert.status) + '</span>' : '') + '</div>' +

@@ -1,7 +1,7 @@
 {
   "name": "Robert-Ioan Buda",
-  "title": "NOC Engineer & Penetration Tester practitioner",
-  "heroRole": "NOC Engineer & Penetration Tester practitioner",
+  "title": "NOC Cyber Security Engineer & Penetration Tester practitioner",
+  "heroRole": "NOC Cyber Security Engineer & Penetration Tester practitioner",
   "heroDescription": "NOC and cybersecurity engineer with hands-on experience across monitoring, incident response, IT/OT security, firewall administration, endpoint security, and practical penetration testing.",
   "location": "Romania",
   "locationShort": "Romania",
@@ -31,7 +31,7 @@
   ],
   "certifications": [
     { "shortName": "eJPT", "fullName": "Junior Penetration Tester", "issuer": "INE Security", "issuerFull": "INE Security (eLearnSecurity)", "status": "June 2026", "certUrl": "https://certs.ine.com/033ad5c7-7051-4479-90b6-7b5361b398bf", "examUrl": "https://security.ine.com/certifications/ejpt-certification/" },
-    { "shortName": "CRTA", "fullName": "Certified Red Team Analyst", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/red-team-analyst-crta/", "examUrl": "https://cyberwarfare.live/product/red-team-analyst-crta/", "badgeImage": "/images/badges/crta.webp" },
+    { "shortName": "CRTA", "fullName": "Certified Red Team Analyst", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "", "progressButton": true, "certUrl": "", "examUrl": "https://cyberwarfare.live/product/red-team-analyst-crta/", "badgeImage": "/images/badges/crta.webp" },
     { "shortName": "MCRTA", "fullName": "Multi-Cloud Red Team Analyst", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "examUrl": "https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "badgeImage": "/images/badges/mcrta.webp" },
     { "shortName": "AD-RTS", "fullName": "AD Red Team Specialist", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/active-directory-red-team-specialist-ad-rts/", "examUrl": "https://cyberwarfare.live/product/active-directory-red-team-specialist-ad-rts/", "badgeImage": "/images/badges/ad-rts.webp" },
     { "shortName": "PortSwigger Web Security Academy", "fullName": "", "issuer": "", "issuerFull": "", "status": "In Progress", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template" },
