@@ -30,11 +30,11 @@
   ],
   "certifications": [
     { "shortName": "eJPT", "fullName": "Junior Penetration Tester", "issuer": "INE Security", "issuerFull": "INE Security (eLearnSecurity)", "status": "June 2026", "certUrl": "https://certs.ine.com/033ad5c7-7051-4479-90b6-7b5361b398bf", "examUrl": "https://security.ine.com/certifications/ejpt-certification/" },
-    { "shortName": "World of Labshock Security Training", "fullName": "OT/ICS cybersecurity learning platform", "issuer": "", "issuerFull": "", "status": "", "certUrl": "", "examUrl": "" },
+    { "shortName": "World of Labshock Security Training", "fullName": "OT/ICS cybersecurity learning platform", "issuer": "Labshock", "issuerFull": "Labshock", "status": "", "certUrl": "", "examUrl": "", "badgeImage": "/images/badges/labsock.png" },
     { "shortName": "CRTA", "fullName": "Certified Red Team Analyst", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "", "progressButton": true, "certUrl": "", "examUrl": "https://cyberwarfare.live/product/red-team-analyst-crta/", "badgeImage": "/images/badges/crta.webp" },
     { "shortName": "MCRTA", "fullName": "Multi-Cloud Red Team Analyst", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "examUrl": "https://cyberwarfare.live/product/multi-cloud-red-team-analyst-mcrta/", "badgeImage": "/images/badges/mcrta.webp" },
     { "shortName": "AD-RTS", "fullName": "AD Red Team Specialist", "issuer": "CyberWarfare Labs", "issuerFull": "CyberWarfare Labs", "status": "In Progress", "certUrl": "https://cyberwarfare.live/product/active-directory-red-team-specialist-ad-rts/", "examUrl": "https://cyberwarfare.live/product/active-directory-red-team-specialist-ad-rts/", "badgeImage": "/images/badges/ad-rts.webp" },
-    { "shortName": "PortSwigger Web Security Academy", "fullName": "", "issuer": "", "issuerFull": "", "status": "In Progress", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template" },
+    { "shortName": "PortSwigger Web Security Academy", "fullName": "", "issuer": "PortSwigger", "issuerFull": "PortSwigger", "status": "In Progress", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template", "badgeImage": "/images/badges/burp-suite.png" },
     { "shortName": "Hack The Box Academy - Penetration Tester Path", "fullName": "", "issuer": "", "issuerFull": "", "status": "In Progress", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template" },
     { "shortName": "Prisma Access SSE: Configuration and Deployment", "fullName": "", "issuer": "", "issuerFull": "", "status": "May 2026", "certUrl": "https://example.com/template", "examUrl": "https://example.com/template" }
   ],
@@ -60,6 +60,8 @@
   ],
   "issuerLogos": {
     "INE Security": { "src": "/images/brands/ine-security.svg", "cvSrc": "/images/brands/ine-security-cv.png" },
-    "CyberWarfare Labs": { "src": "/images/brands/cyberwarfare-labs.png", "cvSrc": "/images/brands/cyberwarfare-labs-cv.png" }
+    "CyberWarfare Labs": { "src": "/images/brands/cyberwarfare-labs.png", "cvSrc": "/images/brands/cyberwarfare-labs-cv.png" },
+    "Labshock": { "src": "/images/brands/labshock-brand.png" },
+    "PortSwigger": { "src": "/images/brands/port-swigger.png" }
   }
 }
