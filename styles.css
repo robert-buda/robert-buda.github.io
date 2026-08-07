@@ -15,6 +15,7 @@
     --border-color: #27272a;
     --glow-green: 0 0 20px rgba(0, 255, 157, 0.3);
     --glow-cyan: 0 0 20px rgba(0, 212, 255, 0.3);
+    --nav-bg: rgba(10, 10, 15, 0.95);
 }
 
 :root[data-theme="light"] {
@@ -29,6 +30,7 @@
     --accent-green-dim: #087f5526;
     --accent-cyan: #087c99;
     --glow-green: 0 0 20px rgba(8, 127, 85, 0.18);
+    --nav-bg: rgba(245, 247, 249, 0.95);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -70,7 +72,7 @@ nav {
     top: 0; left: 0; right: 0;
     z-index: 1000;
     padding: 1rem 2rem;
-    background: rgba(10, 10, 15, 0.95);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -99,6 +101,7 @@ nav {
 .nav-links {
     display: flex;
     gap: 1.5rem;
+    margin-left: auto;
     list-style: none;
 }
 

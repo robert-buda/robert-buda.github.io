@@ -219,7 +219,7 @@ async function loadProfileData() {
                     '<h3 class="project-title">' + escapeHtml(project.title) + '</h3>' +
                     '<p class="project-description">' + escapeHtml(project.description) + '</p>' +
                     '<div class="project-technologies"><span class="project-technologies-label">Technologies</span><div class="project-tech-list">' + technologies + '</div></div>' +
-                    '<a class="project-link" href="#" aria-label="View details for ' + escapeHtml(project.title) + '">View Details <span aria-hidden="true">→</span></a>' +
+                    (project.url ? '<a class="project-link" href="' + escapeHtml(project.url) + '" target="_blank" rel="noopener noreferrer" aria-label="View details for ' + escapeHtml(project.title) + '">View Details <span aria-hidden="true">→</span></a>' : '') +
                     '</article>';
             }).join('');
         }
