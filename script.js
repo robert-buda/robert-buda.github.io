@@ -1,5 +1,28 @@
 function toggleMenu() { document.getElementById('navLinks').classList.toggle('active'); }
 
+function applyTheme(theme) {
+    document.documentElement.dataset.theme = theme;
+    const toggle = document.getElementById('themeToggle');
+    if (toggle) {
+        const lightMode = theme === 'light';
+        toggle.textContent = lightMode ? '☾' : '☀';
+        toggle.setAttribute('aria-label', lightMode ? 'Switch to dark mode' : 'Switch to light mode');
+        toggle.title = lightMode ? 'Switch to dark mode' : 'Switch to light mode';
+    }
+    localStorage.setItem('portfolio-theme', theme);
+}
+
+function setupThemeToggle() {
+    const toggle = document.getElementById('themeToggle');
+    const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
+    applyTheme(savedTheme);
+    if (toggle) toggle.addEventListener('click', function() {
+        applyTheme(document.documentElement.dataset.theme === 'light' ? 'dark' : 'light');
+    });
+}
+
+setupThemeToggle();
+
 // IntersectionObserver for fade-in animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
