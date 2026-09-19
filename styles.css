@@ -587,6 +587,10 @@ section {
     opacity: 0.85;
 }
 
+.cert-badge--rounded {
+    border-radius: 8px;
+}
+
 .issuer-logo {
     height: 16px;
     width: auto;

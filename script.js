@@ -189,7 +189,7 @@ async function loadProfileData() {
                     var logo = issuerLogos[cert.issuer] || {};
                     var badgeSrc = cert.badgeImage || logo.src;
                     var badgeHtml = badgeSrc
-                        ? '<div class="cert-badge-wrap"><img class="cert-badge' + (cert.badgeImage ? '' : ' cert-badge--brand') + '" src="' + escapeHtml(badgeSrc) + '" alt="' + escapeHtml(cert.shortName) + ' badge" loading="lazy" onerror="this.style.display=\'none\'"></div>'
+                        ? '<div class="cert-badge-wrap"><img class="cert-badge' + (cert.badgeImage ? '' : ' cert-badge--brand') + (cert.badgeClass ? ' ' + escapeHtml(cert.badgeClass) : '') + '" src="' + escapeHtml(badgeSrc) + '" alt="' + escapeHtml(cert.shortName) + ' badge" loading="lazy" onerror="this.style.display=\'none\'"></div>'
                         : '';
                     var logoHtml = logo.src
                         ? '<img class="issuer-logo" src="' + escapeHtml(logo.src) + '" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
